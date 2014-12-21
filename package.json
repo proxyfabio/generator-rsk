@@ -25,7 +25,8 @@
     "flux",
     "react",
     "react.js",
-    "reactjs"
+    "reactjs",
+    "react-starter-kit"
   ],
   "dependencies": {
     "yeoman-generator": "^0.18.0",
