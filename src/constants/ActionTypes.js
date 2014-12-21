@@ -14,4 +14,5 @@ module.exports = keyMirror({
   // Page action types
   SET_CURRENT_PAGE: null
 
+#===== yeoman hook =====#
 });
