@@ -1,46 +1,59 @@
-# generator-rsk [![Build Status](https://secure.travis-ci.org/proxyfabio/generator-rsk.png?branch=master)](https://travis-ci.org/proxyfabio/generator-rsk)
+# generator-rsk
 
 > [Yeoman](http://yeoman.io) generator
 
 
 ## Getting Started
 
-### What is Yeoman?
+### About
 
-Trick question. It's not a thing. It's this guy:
+This is Yeoman generator inspired by react-starter-kit by [@koistya](https://github.com/koistya)
 
-![](http://i.imgur.com/JHaAlBJ.png)
+It works similar to react-starter-kit. Also there is some features.
 
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
+### How to Install
 
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
-
-```bash
-npm install -g yo
 ```
-
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-rsk from npm, run:
-
-```bash
-npm install -g generator-rsk
+$ npm install -g yo
+$ git clone https://github.com/proxyfabio/generator-rsk.git
+$ cd generator-rsk
+$ npm link
 ```
+Now generator as available for Yeoman
 
-Finally, initiate the generator:
-
-```bash
-yo rsk
+### How to Use
 ```
+$ yo rsk
+```
+This will extract original react-starter-kit repo.
 
-### Getting To Know Yeoman
+Also you can use only features.
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+####Subgenerators
+They allows you to create some scaffolding.
+```
+$ yo rsk:store name
+```
+This creates new `nameStore` store.
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+```
+$ yo rsk:action name
+```
+This creates new `nameActions` action. Also it creates `ActionTypes.js` & `PayloadSources.js` files at `constants` directory.
 
+```
+$ yo rsk:cmp name
+```
+This creates new `name` react component.
+When you execute `rsk:cmp` command there will be special dialog. You can create store and action for your component if it's necessary.
+
+```
+$ yo rsk:addaction name
+```
+This allows you to update existing components via dialog:
+1. Creates new `ConstantName` for `ActionTypes`
+2. Creates payload listener at chosen store if necessary.
+3. Creates `name` action at component's actions file if necessary.
 
 ## License
 
