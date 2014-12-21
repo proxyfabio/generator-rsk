@@ -1,6 +1,6 @@
 {
   "name": "generator-rsk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -20,7 +20,12 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "yeoman",
+    "flux",
+    "react",
+    "react.js",
+    "reactjs"
   ],
   "dependencies": {
     "yeoman-generator": "^0.18.0",
